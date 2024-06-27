@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "element-plus": "^2.7.5",
+    "serve": "^14.2.3",
     "three": "^0.165.0",
     "unplugin-auto-import": "^0.17.6",
     "unplugin-vue-components": "^0.27.0",
