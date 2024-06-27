@@ -1,0 +1,49 @@
+{
+    "message": {
+        "hello": "你好，世界",
+        "deviceLabel": "设备",
+        "baudRateLabel": "波特率",
+        "connectionBtn": "连接",
+        "disconnectionBtn": "断开连接",
+        "connectionState": "连接状态",
+        "connectionFailedHint": "连接失败，请检查设备是否连接正确",
+        "smallScreenHint": "该页面不支持小屏幕设备，请使用PC端浏览器打开",
+        "noWebSerialAPIHint": "您的浏览器不支持Web Serial API，请使用支持Web Serial API的浏览器打开",
+        "lonoTabLable": "Lono误差调节",
+        "lonoMotionTabLabel": "Lono动作编辑",
+        "lonoProTabLable": "Lono-Pro误差调节",
+        "lonoProMotionTabLabel": "Lono-Pro动作编辑",
+
+        "lonoBiasAdjustment": {
+            "rightShoulderLabel": "右肩",
+            "rightElbowLabel": "右肘",
+            "rightWristLabel": "右腕",
+            "rightHipLabel": "右髋",
+            "rightAnkleLabel": "右踝",
+
+            "leftShoulderLabel": "左肩",
+            "leftElbowLabel": "左肘",
+            "leftWristLabel": "左腕",
+            "leftHipLabel": "左髋",
+            "leftAnkleLabel": "左踝",
+
+            "middleModelLable": "模型",
+            "middleJointDesc": "关节说明",
+
+            "saveBtn": "保存偏差",
+            "resetBtn": "重置偏差"
+        },
+
+        "lonoMotionEdit": {
+        "btnAdd": "添加",
+        "btnDelete": "删除",
+        "btnEdit": "编辑",
+        "btnMoveForward": "前移",
+        "btnMoveBackward": "后移",
+        "btnCopy": "复制",
+        "btnPlaySingle": "预览帧",
+        "btnPreview": "预览序列",
+        "btnExport": "导出"
+      }
+    }
+}

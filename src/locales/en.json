@@ -1,0 +1,49 @@
+{
+    "message": {
+      "hello": "Hello World",
+      "deviceLabel": "Device",
+      "baudRateLabel": "Baud Rate",
+      "connectionBtn": "Connect",
+      "disconnectionBtn": "Disconnect",
+      "connectionState": "State",
+      "connectionFailedHint": "Connection failed. Please check the connection and try again.",
+      "smallScreenHint": "This page does not support mobile devices or small screens. Please use a desktop browser.",
+      "noWebSerialAPIHint": "Your browser does not support Web Serial API. Please use a browser that supports Web Serial API.",
+      "lonoTabLable": "Lono Bias Adjustment",
+      "lonoMotionTabLabel": "Lono Motion Editor",
+      "lonoProTabLable": "Lono-Pro Bias Adjustment",
+      "lonoProMotionTabLabel": "Lono-Pro Motion Editor",
+
+      "lonoBiasAdjustment": {
+        "rightShoulderLabel": "Right Shoulder",
+        "rightElbowLabel": "Right Elbow",
+        "rightWristLabel": "Right Wrist",
+        "rightHipLabel": "Right Hip",
+        "rightAnkleLabel": "Right Ankle",
+
+        "leftShoulderLabel": "Left Shoulder",
+        "leftElbowLabel": "Left Elbow",
+        "leftWristLabel": "Left Wrist",
+        "leftHipLabel": "Left Hip",
+        "leftAnkleLabel": "Left Ankle",
+
+        "middleModelLable": "Model",
+        "middleJointDesc": "Joint Description",
+
+        "saveBtn": "Save Bias",
+        "resetBtn": "Reset Bias"
+      },
+
+      "lonoMotionEdit": {
+        "btnAdd": "Add",
+        "btnDelete": "Delete",
+        "btnEdit": "Edit",
+        "btnMoveForward": "Move Forward",
+        "btnMoveBackward": "Move Backward",
+        "btnCopy": "Copy",
+        "btnPlaySingle": "Preview Frame",
+        "btnPreview": "Preview Sequence",
+        "btnExport": "Export"
+      }
+    }
+  }

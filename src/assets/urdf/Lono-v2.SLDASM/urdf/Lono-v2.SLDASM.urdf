@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Lono-v2.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.032166 0.04144 0.042913"
+        rpy="0 0 0" />
+      <mass
+        value="0.03409" />
+      <inertia
+        ixx="2.3815E-05"
+        ixy="-4.0203E-09"
+        ixz="2.5321E-08"
+        iyy="4.1784E-05"
+        iyz="1.523E-07"
+        izz="2.3616E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.0068988 0.005603 2.2045E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0030944" />
+      <inertia
+        ixx="2.0716E-07"
+        ixy="1.1956E-07"
+        ixz="7.5729E-13"
+        iyy="5.2448E-07"
+        iyz="1.6914E-13"
+        izz="5.6441E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder"
+    type="continuous">
+    <origin
+      xyz="0.067387 -0.023131 0.033512"
+      rpy="0 -0.9883 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.0175 0.00010691 -0.0011"
+        rpy="0 0 0" />
+      <mass
+        value="0.022394" />
+      <inertia
+        ixx="2.203E-06"
+        ixy="-1.0323E-21"
+        ixz="-4.2352E-22"
+        iyy="4.3155E-06"
+        iyz="5.4443E-09"
+        izz="3.1477E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_elbow"
+    type="continuous">
+    <origin
+      xyz="0 0.02 0"
+      rpy="1.5708 1.288 1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.013053 0.00077138 0.0089554"
+        rpy="0 0 0" />
+      <mass
+        value="0.0067407" />
+      <inertia
+        ixx="4.0275E-07"
+        ixy="2.1529E-07"
+        ixz="-1.8976E-08"
+        iyy="1.104E-06"
+        iyz="3.6912E-08"
+        izz="1.2348E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist"
+    type="fixed">
+    <origin
+      xyz="0.052463 0.012612 -0.0165"
+      rpy="1.3258 -1.5708 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-0.0068988 0.005603 2.2045E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0030944" />
+      <inertia
+        ixx="2.0716E-07"
+        ixy="1.1956E-07"
+        ixz="7.5729E-13"
+        iyy="5.2448E-07"
+        iyz="1.6914E-13"
+        izz="5.6441E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder"
+    type="continuous">
+    <origin
+      xyz="-0.0031133 -0.023131 0.033512"
+      rpy="3.1416 -1.3448 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.0175 0.00010691 -0.0011"
+        rpy="0 0 0" />
+      <mass
+        value="0.022394" />
+      <inertia
+        ixx="2.203E-06"
+        ixy="9.6946E-22"
+        ixz="1.0092E-22"
+        iyy="4.3155E-06"
+        iyz="5.4443E-09"
+        izz="3.1477E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_elbow"
+    type="continuous">
+    <origin
+      xyz="0 0.02 0"
+      rpy="-1.5708 0.016747 -1.5708" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.00364 -0.019114 0.00094355"
+        rpy="0 0 0" />
+      <mass
+        value="0.0068255" />
+      <inertia
+        ixx="4.1195E-07"
+        ixy="-2.2736E-07"
+        ixz="2.0222E-08"
+        iyy="1.1246E-06"
+        iyz="3.7653E-08"
+        izz="1.264E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist"
+    type="continuous">
+    <origin
+      xyz="-0.035 0 0"
+      rpy="1.7133 1.5708 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="-0.0018315 -5.3429E-16 0.03109"
+        rpy="0 0 0" />
+      <mass
+        value="0.024085" />
+      <inertia
+        ixx="5.547E-06"
+        ixy="-2.0514E-22"
+        ixz="-4.1765E-08"
+        iyy="8.2665E-06"
+        iyz="-2.1879E-22"
+        izz="4.7418E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip"
+    type="continuous">
+    <origin
+      xyz="0.056137 -0.077381 0.033512"
+      rpy="1.5708 1.5539 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link8">
+    <inertial>
+      <origin
+        xyz="-0.014037 -0.017243 0.0001263"
+        rpy="0 0 0" />
+      <mass
+        value="0.017535" />
+      <inertia
+        ixx="7.6074E-06"
+        ixy="-6.8698E-07"
+        ixz="8.6302E-08"
+        iyy="1.0613E-05"
+        iyz="1.1373E-07"
+        izz="4.502E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle"
+    type="continuous">
+    <origin
+      xyz="0 0 0.042"
+      rpy="-1.5708 -0.204 -1.5708" />
+    <parent
+      link="link7" />
+    <child
+      link="link8" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link9">
+    <inertial>
+      <origin
+        xyz="-0.00183150299939141 -4.16333634234434E-16 0.0310901743312164"
+        rpy="0 0 0" />
+      <mass
+        value="0.0240848296985867" />
+      <inertia
+        ixx="5.5470313973607E-06"
+        ixy="-9.26442286059391E-22"
+        ixz="-4.17650546187708E-08"
+        iyy="8.26645791373807E-06"
+        iyz="2.27474668452083E-23"
+        izz="4.74175196354046E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip"
+    type="continuous">
+    <origin
+      xyz="0.0081367 -0.077381 0.033512"
+      rpy="-1.5708 1.5254 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.07"
+      upper="1.07"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link10">
+    <inertial>
+      <origin
+        xyz="0.0140365865061575 -0.0172428392680891 0.000126300206101305"
+        rpy="0 0 0" />
+      <mass
+        value="0.0175353461947104" />
+      <inertia
+        ixx="7.60744266392081E-06"
+        ixy="6.86979952414671E-07"
+        ixz="-8.63012337015799E-08"
+        iyy="1.06134493293437E-05"
+        iyz="1.13735694675603E-07"
+        izz="4.50203474368573E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lono-v2.SLDASM/meshes/link10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle"
+    type="continuous">
+    <origin
+      xyz="0 0 0.042"
+      rpy="-1.5707963267949 0.015382738136815 -1.5707963267949" />
+    <parent
+      link="link9" />
+    <child
+      link="link10" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

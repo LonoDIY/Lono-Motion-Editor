@@ -1,0 +1,22 @@
+{
+    "AGI_articulations": {
+        "articulations": [
+            {
+                "name": "Wheels",
+                "stages": [
+                    {
+                        "name": "Drive",
+                        "type": "xRotate",
+                        "minimumValue": -360,
+                        "maximumValue": 360,
+                        "initialValue": 0
+                    }
+                ],
+                "modelNodes": [
+                    "FrontWheels",
+                    "RearWheels"
+                ]
+            }
+        ]
+    }
+}
