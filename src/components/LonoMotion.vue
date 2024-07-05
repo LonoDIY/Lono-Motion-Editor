@@ -486,7 +486,7 @@ export default {
             try {
                 const loader = new URDFLoader(manager);
                 console.log("loader", loader)
-                loader.load('../../public/urdf/lono/urdf/lono.urdf', result => {
+                loader.load('/urdf/lono/urdf/lono.urdf', result => {
 
                     robot = result;
                     robot.rotation.x = Math.PI / 2;
