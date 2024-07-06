@@ -261,7 +261,7 @@ export default {
             const manager = new Three.LoadingManager();
             try {
                 const loader = new URDFLoader(manager);
-                loader.load('../../public/urdf/lono/urdf/lono.urdf', result => {
+                loader.load('/urdf/lono/urdf/lono.urdf', result => {
 
                     robot = result;
                     robot.rotation.x = Math.PI / 2;

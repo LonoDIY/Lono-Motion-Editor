@@ -15,4 +15,8 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  scripts: {
+    "build": "vite build",
+    "preview": "vite preview"
+  }
 })
